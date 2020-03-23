@@ -18,7 +18,7 @@ pygame.display.set_caption('Ping-Pong')
 # paletka gracza
 PALETKA_SZER = 100  # szerokość
 PALETKA_WYS = 20  # wysokość
-BLUE = (0, 0, 255)  # kolor paletki
+BLUE = (253, 228, 86)  # kolor paletki
 PALETKA_1_POZ = (350, 360)  # początkowa pozycja zapisana w tupli
 # utworzenie powierzchni paletki, wypełnienie jej kolorem,
 paletka1 = pygame.Surface([PALETKA_SZER, PALETKA_WYS])
@@ -33,7 +33,7 @@ P_SZER = 20  # szerokość
 P_WYS = 20  # wysokość
 P_PREDKOSC_X = 4  # prędkość pozioma x
 P_PREDKOSC_Y = 4  # prędkość pionowa y
-GREEN = (0, 255, 0)  # kolor piłki
+GREEN = (0, 0, 0)  # kolor piłki
 # utworzenie powierzchni piłki, narysowanie piłki i wypełnienie kolorem
 pilka = pygame.Surface([P_SZER, P_WYS], pygame.SRCALPHA, 32).convert_alpha()
 pygame.draw.ellipse(pilka, GREEN, [0, 0, P_SZER, P_WYS])
@@ -47,7 +47,7 @@ FPS = 30  # liczba klatek na sekundę
 fpsClock = pygame.time.Clock()  # zegar śledzący czas
 
 # paletka ai
-RED = (255, 0, 0)
+RED = (184, 3, 255)
 PALETKA_AI_POZ = (350, 20)  # początkowa pozycja zapisana w tupli
 # utworzenie powierzchni paletki, wypełnienie jej kolorem,
 paletkaAI = pygame.Surface([PALETKA_SZER, PALETKA_WYS])
